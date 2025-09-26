@@ -8,8 +8,8 @@ This advisory describes a phishing campaign that abused **legitimate infrastruct
 
 ## 📥 Delivery Mechanism
 
-- **Sender Address (Compromised):** `info.rcn@peacockpress.net`
-- **Authenticated Sender:** `jim@peacockpress.net`
+- **Sender Address (Compromised):** `[redacted]@peacockpress.net`
+- **Authenticated Sender:** `[redacted]@peacockpress.net`
 - **Mail Server:** `smtp6.relay.iad3b.emailsrvr.com`
 - **Phish Format:** HTML email with no visible attachment
 - **Phishing Link:** `https://myastound.webflow.io` → impersonated browser update page
@@ -58,8 +58,8 @@ C:\Program Files\chrome_Unpacker_BeginUnzipping5728_*
 - `C:\Program Files\chrome_Unpacker_BeginUnzipping5728_*`
 
 ### Email IOCs:
-- **From:** `info.rcn@peacockpress.net`
-- **Authenticated Sender:** `jim@peacockpress.net`
+- **From:** `[redacted]@peacockpress.net`
+- **Authenticated Sender:** `[redacted]@peacockpress.net`
 - **SMTP IP:** `146.20.161.107`
 - **Email Auth:** `ESMTPSA (authenticated)`
 - **MIME-Type:** `multipart/related`
@@ -110,6 +110,6 @@ rule Webflow_BrowserDropper_Sept2025
 - Hatching Triage behavioral analysis
 - Header review via internal investigation
 
-Author: Jonathan Deleon / SaberGuard
-Date: September 25, 2025
-License: MIT
+**Author: Jonathan Deleon / SaberGuard**
+**Date: September 25, 2025**
+**License: MIT**
