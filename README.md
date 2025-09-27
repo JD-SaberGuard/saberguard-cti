@@ -11,9 +11,9 @@ Each advisory includes:
 
 ## 🔄 Current Advisories
 
-| Date       | Title                                 | Link |
-|------------|----------------------------------------|------|
-| 2025-09-25 | Webflow Browser Dropper Campaign       | [Read](advisories/2025-09_webflow-browser-dropper/) |
+| Date       | Title                               | Link                                                        | Status      |
+|------------|-------------------------------------|-------------------------------------------------------------|-------------|
+| 2025-09-26 | Webflow/Wix Browser Dropper Campaign    | [Read](advisories/2025-09_webflow-browser-dropper/)          | ✅ Taken Down |
 
 ## 📣 Attribution & Usage
 
