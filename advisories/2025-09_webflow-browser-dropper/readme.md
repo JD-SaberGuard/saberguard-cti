@@ -10,9 +10,11 @@ This advisory describes a phishing campaign that abused **legitimate infrastruct
 
 - **Sender Address (Compromised):** `[redacted]@peacockpress.net`
 - **Authenticated Sender:** `[redacted]@peacockpress.net`
-- **Mail Server:** `smtp6.relay.iad3b.emailsrvr.com`
+- **Mail Server:** `smtp6.relay.iad3b.emailsrvr.com` → (Rackspace Emailsrvr infrastructure)  
 - **Phish Format:** HTML email with no visible attachment
-- **Phishing Link:** `https://myastound.webflow.io` → impersonated browser update page
+- **Phishing Links (defanged):**  
+    - hxxps://myastound[.]webflow[.]io → impersonated browser update page  
+    - hxxps://anisholi406[.]wixsite[.]com/my-site-2 → second-stage malware delivery  
 
 The email was delivered via **authenticated SMTP**, indicating either a credential compromise or abuse of the mail server by an insider. The phishing page was hosted on **Webflow.io**, a legitimate web development platform.
 
@@ -39,7 +41,7 @@ C:\Program Files\chrome_Unpacker_BeginUnzipping5728_*
 
 ### Malicious URLs / Domains:
 - `https://myastound.webflow.io`
-- `anisholi406.wixsite.com`
+- `https://anisholi406.wixsite.com`
 
 ### IP Addresses:
 - `104.18.36.248`
@@ -91,10 +93,10 @@ rule Webflow_BrowserDropper_Sept2025
       (uint16(0) == 0x5A4D) and 3 of ($cmd1, $path1, $reg1, $pipe, $edge_exe)
 }
 ```
-## 🌐 VirusTotal Resources
+Disclaimer: This YARA rule is provided for research and detection purposes only.  
+It may generate false positives. Validate before production deployment.  
 
--🔍 VT Collection: View VirusTotal IOC Collection
--📊 VT Graph: Open Interactive Graph
+---
 
 ## 🛡️ Mitigation Recommendations
 
@@ -106,10 +108,13 @@ rule Webflow_BrowserDropper_Sept2025
 
 ### 📚 References & Credits
 
-- VirusTotal Collection and Graph
-- Hatching Triage behavioral analysis
+- [VT Collection: View VirusTotal IOC Collection](https://www.virustotal.com/gui/collection/e60373b16c25114cbc01c6f0b034d0cbfa8bf8f01c939d87ff13f3d1d6d73a39/summary)
+- [VT Graph: Open Interactive Graph](https://www.virustotal.com/graph/g7e3be92915be41928f5853199de88cea157337c3bb9a43199777bf47170a35c4)
+- [Hatching Triage behavioral analysis](https://tria.ge/250924-pnn3xsxwes)
 - Header review via internal investigation
 
-**Author: Jonathan Deleon / SaberGuard**
-**Date: September 25, 2025**
-**License: MIT**
+---
+
+### **Author: Jonathan DeLeon / SaberGuard**
+### **Date: September 26, 2025**
+### **License: MIT**
