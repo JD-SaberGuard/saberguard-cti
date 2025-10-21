@@ -11,9 +11,11 @@ Each advisory includes:
 
 ## 🔄 Current Advisories
 
-| Date       | Title                               | Link                                                        | Status      |
-|------------|-------------------------------------|-------------------------------------------------------------|-------------|
-| 2025-09-26 | Webflow/Wix Browser Dropper Campaign    | [Read](advisories/2025-09_webflow-browser-dropper/)          | ✅ Taken Down |
+| Date       | Title                                   | Link                                                        | Status           |
+|------------|-----------------------------------------|-------------------------------------------------------------|------------------|
+| 2025-09-26 | Webflow/Wix Browser Dropper Campaign    | [Read](advisories/2025-09_webflow-browser-dropper/)          | ✅ Taken Down    |
+| 2025-10-20 | RCN/Astound Impersonation (Wix-Hosted)  | [Read](advisories/2025-10_rcn-astound-impersonation/)        | ⏳ Takedown Pending |
+
 
 ## 📣 Attribution & Usage
 
